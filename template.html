@@ -1,0 +1,21 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Users of the System</title>
+</head>
+<body>
+    <h1>Users of the System</h1>
+    <table>
+        <tr>
+            <th>Avatar</th><th>ID</th><th>E-Mail</th><th>Name</th>
+        </tr>
+        {% for user in mydata %}
+        <tr>
+            <td><img src="{{user.avatar}}" /></td><td>{{user.id}}</td><td>{{user.email}}</td><td>{{user.first_name}} {{user.last_name}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
