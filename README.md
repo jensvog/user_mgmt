@@ -9,16 +9,16 @@ convert it to HTML.
 
 You can install all necessary packages with:
 
-```pip install requirements.txt`
+```pip install requirements.txt```
 
 ## Usage
 
 You can generate the HTML page with:
 
-```python user_mgmt.py````
+```python user_mgmt.py```
 
 ## Testing
 
 Tests are written with pytest. You can execute them with:
 
-```pytest````
+```pytest```
