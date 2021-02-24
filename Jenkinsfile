@@ -13,6 +13,11 @@ pipeline {
                 sh 'pytest --junitxml unit_test_report.xml'
             }
         }
+        stage('Create page') { 
+            steps {
+                sh 'python user_mgmt.py'
+            }
+        }
     }
     post {
         always {
